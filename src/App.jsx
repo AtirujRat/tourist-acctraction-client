@@ -11,7 +11,7 @@ function App() {
 
   const getTouristAttractionData = async () => {
     const response = await axios.get(
-      `http://localhost:4001/trips?keywords=${searchBar}`
+      `https://tourist-acctraction-server.onrender.com/trips?keywords=${searchBar}`
     );
     setTourlistPlaces(response.data.data);
   };
